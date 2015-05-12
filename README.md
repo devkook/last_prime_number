@@ -16,3 +16,5 @@ http://www.mathwarehouse.com/arithmetic/numbers/prime-number/prime-factorization
 1. bundle install
 2. guard
 
+#리팩토링 목표
+1. 소수인지 알아내는 방법에서 성능 개선 - 한번 알아낸값 기억하기

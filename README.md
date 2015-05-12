@@ -10,7 +10,7 @@
 1. http://ko.wikipedia.org/wiki/%EC%86%8C%EC%88%98_(%EC%88%98%EB%A1%A0)
 
 #소인수 분해 계산기
-http://www.mathwarehouse.com/arithmetic/numbers/prime-number/prime-factorization-calculator.
+http://www.mathwarehouse.com/arithmetic/numbers/prime-number/prime-factorization-calculator.php
 
 #실행
 1. bundle install

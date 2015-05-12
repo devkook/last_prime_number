@@ -1,3 +1,5 @@
+require 'benchmark'
+
 class LastPrimeNumber
  
  def initialize
@@ -12,7 +14,7 @@ class LastPrimeNumber
  	p_array = []
 
  	for p in 2..n
- 		break if p > i
+ 		# break if p > i #0.011103855002147611 : 0.009555416996590793
  		if is_prime_number(p)
  			while i % p == 0
  				p_array << p
@@ -32,3 +34,16 @@ class LastPrimeNumber
  	end
  end
 end
+
+Benchmark.bm do |x|
+  x.report {
+    lpn = LastPrimeNumber.new
+    lpn.big_prime(27637)
+  }
+  x.report {
+    # diff = Diff2.new(1, 100000)
+    # puts "Max #2 #{diff.max}"
+  }
+end
+
+

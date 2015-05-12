@@ -14,7 +14,7 @@ class LastPrimeNumber
  	p_array = []
 
  	for p in 2..n
- 		# break if p > i #0.011103855002147611 : 0.009555416996590793
+ 		break if p > i #0.011103855002147611 : 0.009555416996590793
  		if is_prime_number(p)
  			while i % p == 0
  				p_array << p

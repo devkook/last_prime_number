@@ -1,10 +1,15 @@
 class LastPrimeNumber
  
  def initialize
+ 	@prime_numbers = []
  end
 
  def hi
    'hi'
+ end
+
+ def init_prime_number(n)
+
  end
 
  def big_prime(n)
@@ -12,6 +17,9 @@ class LastPrimeNumber
  	p_array = []
 
  	for p in 2..n
+ 		
+ 		break if p > i
+ 		
  		if is_prime_number(p)
  			while i % p == 0
  				p_array << p
@@ -26,8 +34,19 @@ class LastPrimeNumber
  def is_prime_number(n)
  	return false if 2 > n
 
+ 	if @prime_numbers.include? n
+ 		true
+ 	end
+
  	for p in 2..n
- 		return p == n if n % p == 0	
+ 		if n % p == 0
+ 			if p == n
+ 				@prime_numbers << p
+ 				return true
+ 			else
+ 				return false
+ 			end
+ 		end	
  	end
  end
 end

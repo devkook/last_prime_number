@@ -12,3 +12,7 @@
 #소인수 분해 계산기
 http://www.mathwarehouse.com/arithmetic/numbers/prime-number/prime-factorization-calculator.
 
+#실행
+1. bundle install
+2. guard
+

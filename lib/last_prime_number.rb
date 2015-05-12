@@ -41,8 +41,7 @@ Benchmark.bm do |x|
     lpn.big_prime(27637)
   }
   x.report {
-    # diff = Diff2.new(1, 100000)
-    # puts "Max #2 #{diff.max}"
+    
   }
 end
 

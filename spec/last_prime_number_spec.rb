@@ -29,23 +29,20 @@ RSpec.describe "마지막소수" do
       expect(lpn.big_prime(1013)).to eq(1013)
     end
 
-    # it '10130의 가장큰 소수?' do
-    #   lpn = LastPrimeNumber.new
-    #   expect(lpn.big_prime(10130)).to eq(1013)
-    # end
+    it '10130의 가장큰 소수?' do
+      lpn = LastPrimeNumber.new
+      expect(lpn.big_prime(10130)).to eq(1013)
+    end
 
-    # it '860073923 가장큰 소수?' do
-    #   lpn = LastPrimeNumber.new
-    #   expect(lpn.big_prime(860073923)).to eq(953)
-    # end
+    it '860073923 가장큰 소수?' do
+      lpn = LastPrimeNumber.new
+      expect(lpn.big_prime(860073923)).to eq(953)
+    end
 
-    # it '600851475143의 가장큰 소수?' do
-    #   lpn = LastPrimeNumber.new
-    #   expect(lpn.big_prime(600851475143)).to eq(6857)
-    # end
-
-
-    
+    it '600851475143의 가장큰 소수?' do
+      lpn = LastPrimeNumber.new
+      expect(lpn.big_prime(600851475143)).to eq(6857)
+    end
   end
 
   describe "#소수인지 확인하기" do

@@ -1,7 +1,18 @@
 #encoding: utf-8
 require './lib/last_prime_number'
+require 'benchmark'
 
 RSpec.describe "마지막소수" do
+
+  # describe "#벤치마크" do
+  #   it 'takes time' do
+  #     Benchmark.realtime{
+  #       lpn = LastPrimeNumber.new
+  #       expect(lpn.big_prime(1013)).to eq(1013)  
+  #     }.should < 0
+  #   end
+  # end	
+
   describe "#가장큰 소수 구하기" do
     it '안녕?' do
       lpn = LastPrimeNumber.new
@@ -18,12 +29,20 @@ RSpec.describe "마지막소수" do
       expect(lpn.big_prime(1013)).to eq(1013)
     end
 
-    it '600851475143의 가장큰 소수?' do
+    it '10130의 가장큰 소수?' do
       lpn = LastPrimeNumber.new
-      expect(lpn.big_prime(600851475143)).to eq(1013)
+      expect(lpn.big_prime(10130)).to eq(1013)
     end
 
-    
+    it '860073923 가장큰 소수?' do
+      lpn = LastPrimeNumber.new
+      expect(lpn.big_prime(860073923)).to eq(953)
+    end
+
+    it '600851475143의 가장큰 소수?' do
+      lpn = LastPrimeNumber.new
+      expect(lpn.big_prime(600851475143)).to eq(6857)
+    end
   end
 
   describe "#소수인지 확인하기" do

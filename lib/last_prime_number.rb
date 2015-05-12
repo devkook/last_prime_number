@@ -12,6 +12,7 @@ class LastPrimeNumber
  	p_array = []
 
  	for p in 2..n
+ 		break if p > i
  		if is_prime_number(p)
  			while i % p == 0
  				p_array << p
